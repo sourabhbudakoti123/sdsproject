@@ -89,8 +89,6 @@ export default function TextForm(props) {
 <h1 className='primary'>Words per Minute(WPM): {wpm}</h1>
 <h1 >Grade: {x}</h1>
   </div>
-  <form >
-    <label>
     <input className='box'
        type="text"
        name='fullname'
@@ -98,7 +96,6 @@ export default function TextForm(props) {
        required='required'
        placeholder='Enter the name'
        />
-    </label>
       
        <input className='box'
        type="numeric"
@@ -115,9 +112,8 @@ export default function TextForm(props) {
        id='grade'
        placeholder='Enter the grade'
        />
-       
-       </form>
-       &nbsp;&nbsp;<button id='submit' className="btn" onClick={action}>Add</button>
+       &nbsp;<button id='submit' className="btn" onClick={action}>Add</button>
+       &nbsp;
   <div>
      <table className='table'>
        <thead>
